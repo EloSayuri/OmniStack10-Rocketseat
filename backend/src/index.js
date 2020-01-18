@@ -1,5 +1,6 @@
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
 const routes = require('./routes');
 
 //instanciando o express
@@ -12,6 +13,7 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-3yxdy.gcp.mongodb.n
    
 });
 
+app.use(cors())
 //Para a aplicação entender o formato json
 app.use(express.json());
 app.use(routes);
