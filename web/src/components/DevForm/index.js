@@ -50,8 +50,7 @@ function DevForm({ onSubmit}) {
               value={github_username}
               onChange={e => setGithubUsername(e.target.value)}
               />
-          </div>
-          
+          </div>S
           <div className="input-block">
             <label htmlFor="techs">Tecnologias</label>
             <input 
@@ -62,7 +61,6 @@ function DevForm({ onSubmit}) {
               onChange={e => setTechs(e.target.value)}
             />
           </div>
-
           <div className="input-group">
             <div className="input-block">
               <label htmlFor="latitude">Latitude</label>
@@ -88,7 +86,6 @@ function DevForm({ onSubmit}) {
                 />
             </div>
           </div>
-          
           <button type="submit">Salvar</button>
         </form>
     )
